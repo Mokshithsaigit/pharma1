@@ -43,8 +43,7 @@ def sell():
     # ca1.create_text(100, 150, text="Type", font=('Arial', 14, 'bold'), fill='#FFFFFF')
     ca1.create_text(350, 180, text="Quantity", font=('Arial', 14, 'bold'), fill='#FFFFFF')
     ca1.create_text(530, 180, text="Price", font=('Arial', 14, 'bold'), fill='#FFFFFF')
-    ca1.create_text(390, 430, text="Total Price", font=('Arial', 14, 'bold'), fill='#FFFFFF')
-    ca1.create_text(460, 430, text=" = ", font=('Arial', 14, 'bold'), fill='#FFFFFF')
+    ca1.create_text(760, 180, text="Total Price", font=('Arial', 14, 'bold'), fill='#FFFFFF')
 
     def clear_entry(event, entry):
         #if entry.get() == entry.get().split()[0]:
@@ -127,7 +126,32 @@ def sell():
 
     e18 = Entry(top1, width=25)
     e18.insert(0, "0")
-    e18.place(x=490, y=420)
+    e18.place(x=690, y=420)
+
+
+    #Total section
+
+    e19 = Entry(top1, width=25)
+    e19.insert(0, "0")
+    e19.place(x=690, y=220)
+
+    e20 = Entry(top1, width=25)
+    e20.insert(0, "0")
+    e20.place(x=690, y=260)
+
+    e21 = Entry(top1, width=25)
+    e21.insert(0, "0")
+    e21.place(x=690, y=300)
+
+    e22 = Entry(top1, width=25)
+    e22.insert(0, "0")
+    e22.place(x=690, y=340)
+
+    e23 = Entry(top1, width=25)
+    e23.insert(0, "0")
+    e23.place(x=690, y=380)
+
+
 
     def check():
         usi1 = e1.get()
@@ -362,12 +386,13 @@ def sell():
     def calculate():
         sum = 0
         for entry in [e5, e8, e11, e14, e17]:
-            try:
-                value = int(entry.get())
-                sum += value
-            except ValueError:
+                try:
+                    value = int(entry.get())
+                    sum += value
+                except ValueError:
+
                 # If the entry section doesn't contain a valid integer, skip it
-                pass
+                    pass
         e18.delete(0, END)
         e18.insert(0, sum)
 
@@ -379,7 +404,7 @@ def sell():
     btn1.place(x=650, y=550)
 
     btn2 = Button(top1, text='Calculate', width=8, padx=1, pady=0.5, fg='black', bg='#FF99CC', activebackground='green',command=calculate)
-    btn2.place(x=670, y=420)
+    btn2.place(x=560, y=420)
 
     btn3 = Button(top1, text='Print', width=8, padx=4, pady=3, fg='black', bg='#FF99CC', activebackground='green')
     btn3.place(x=410, y=550)
