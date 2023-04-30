@@ -49,7 +49,7 @@ def sell():
         #if entry.get() == entry.get().split()[0]:
         if entry.get() == entry.get().split()[0] if len(entry.get().split()) > 0 else entry.get():
             entry.delete(0, "end")
-
+    global e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20,e21,e22,e23,e24,e25,e26
     e1 = Entry(top1, width=25)
     e1.insert(0, "-")
     e1.bind("<FocusIn>", lambda event: clear_entry(event, e1))
@@ -175,7 +175,7 @@ def sell():
 
         try:
             # Check if input value only contains alphabets using regex
-            if not re.match("^[a-zA-Z-]+$", usi1):
+            if not re.match("^[a-zA-Z-.]+$", usi1):
                 raise ValueError
             else:
                 count = count +1
@@ -382,19 +382,118 @@ def sell():
                 message_label17 = Label(top1, text="Input is invalid!", fg="#FF3333",bg="#E0E0E0",font=("Arial",7))
                 message_label17.place(x=520, y=400)
                 message_label17.after(1000, lambda: message_label17.destroy())
+        if count == 17:
+            save()
 
     def calculate():
-        sum = 0
-        for entry in [e5, e8, e11, e14, e17]:
-                try:
-                    value = int(entry.get())
-                    sum += value
-                except ValueError:
+        total = 0
+        try:
+            check()
+            product = float(e4.get()) * float(e5.get())
+            e19.delete(0, END)
+            e19.insert(0, "{:.2f}".format(product))
+        except ValueError:
+            pass
 
-                # If the entry section doesn't contain a valid integer, skip it
-                    pass
-        e18.delete(0, END)
-        e18.insert(0, sum)
+        try:
+            check()
+            product = float(e7.get()) * float(e8.get())
+            e20.delete(0, END)
+            e20.insert(0, "{:.2f}".format(product))
+        except ValueError:
+            pass
+
+        try:
+            check()
+            product = float(e10.get()) * float(e11.get())
+            e21.delete(0, END)
+            e21.insert(0, "{:.2f}".format(product))
+        except ValueError:
+            pass
+
+        try:
+            check()
+            product = float(e13.get()) * float(e14.get())
+            e22.delete(0, END)
+            e22.insert(0, "{:.2f}".format(product))
+        except ValueError:
+            pass
+
+        try:
+            check()
+            product = float(e16.get()) * float(e17.get())
+            e23.delete(0, END)
+            e23.insert(0, "{:.2f}".format(product))
+        except ValueError:
+            pass
+
+        try:
+            check()
+            total = float(e19.get()) + float(e20.get())+ float(e21.get())+ float(e22.get())+ float(e23.get())
+            e18.delete(0, END)
+            e18.insert(0, "{:.2f}".format(total))
+        except ValueError:
+            pass
+
+    def save():
+        #for 1st row
+        var1 = e3.get()
+        var2 = e4.get()
+        var3 = e5.get()
+        try:
+            if ((var1 == '-') and (var2 == 0) and (var3 == 0)):
+                medicine_name1 = "NaN"
+                medicine_quantity1 = "NaN"
+                medicine_price1 = "NaN"
+            elif((var1 != '-') and (var2 != 0) and (var3 != 0)):
+                medicine_name1 = e3.get()
+                medicine_quantity1 = e4.get()
+                medicine_price1 = e5.get()
+            else:
+                error_label1 = Label(top1, text="Invalid data in row1", fg="#FF3333",bg="#E0E0E0",font=("Arial",10))
+                error_label1.place(x=20, y=420)
+                error_label1.after(1000, lambda: error_label1.destroy())
+            # print(medicine_name1)
+            # print(medicine_quantity1)
+            # print(medicine_price1)
+            print(var1)
+            print(var2)
+            print(var3)
+        except ValueError:
+            pass
+
+        # for 2nd row
+        try:
+            if ((e6.get() == '-') and (e7.get() == 0) and (e8.get() == 0)):
+                medicine_name2 = "NaN"
+                medicine_quantity2 = "NaN"
+                medicine_price2 = "NaN"
+            elif ((e6.get() != '-') and (e7.get() != 0) and (e8.get() != 0)):
+                medicine_name2 = e6.get()
+                medicine_quantity2 = e7.get()
+                medicine_price2 = e8.get()
+            else:
+                error_label2 = Label(top1, text="Invalid data in row2", fg="#FF3333", bg="#E0E0E0", font=("Arial", 10))
+                error_label2.place(x=20, y=450)
+                error_label2.after(1000, lambda: error_label2.destroy())
+        except ValueError:
+            pass
+        #for 3rd row
+        try:
+            if ((e9.get() == '-') and (e10.get() == 0) and (e11.get() == 0)):
+                medicine_name3 = "NaN"
+                medicine_quantity3 = "NaN"
+                medicine_price3 = "NaN"
+            elif ((e9.get() != '-') and (e10.get() != 0) and (e11.get() != 0)):
+                medicine_name3 = e9.get()
+                medicine_quantity3 = e10.get()
+                medicine_price3 = e11.get()
+            else:
+                error_label3 = Label(top1, text="Invalid data in row3", fg="#FF3333", bg="#E0E0E0", font=("Arial", 10))
+                error_label3.place(x=20, y=480)
+                error_label3.after(1000, lambda: error_label3.destroy())
+        except ValueError:
+            pass
 
     top1.title('Sell Medicines')
     btn = Button(top1, text='Save', width=10, padx=4, pady=3, fg='black', bg='#CCFFCC', activebackground='green',command=check)
