@@ -1,18 +1,23 @@
-import tkinter as tk
+import pandas as pd
+import matplotlib.pyplot as plt
 
-root = tk.Tk()
+# Read the csv file into a pandas dataframe
+df = pd.read_csv('quantity.csv')
 
-canvas = tk.Canvas(root, borderwidth=0, background="#ffffff")
-frame = tk.Frame(canvas, background="#ffffff")
-vsb = tk.Scrollbar(root, orient="vertical", command=canvas.yview)
-canvas.configure(yscrollcommand=vsb.set)
+# Extract the medicine names and corresponding quantities
+medicine_names = df['medicine_name'].tolist()
+quantities = df['quantity'].tolist()
 
-vsb.pack(side="right", fill="y")
-canvas.pack(side="left", fill="both", expand=True)
-canvas.create_window((4,4), window=frame, anchor="nw")
+# Calculate the total quantity
+total_quantity = sum(quantities)
 
-frame.bind("<Configure>", lambda event, canvas=canvas: canvas.configure(scrollregion=canvas.bbox("all")))
+# Calculate the percentage of each medicine in the inventory
+percentages = [q/total_quantity * 100 for q in quantities]
 
-# Add widgets to the frame here
+# Create the pie chart
+plt.pie(percentages, labels=medicine_names, autopct='%1.1f%%')
+plt.title('Medicine Inventory')
+plt.axis('equal')
 
-root.mainloop()
+# Show the plot
+plt.show()

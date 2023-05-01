@@ -1,134 +1,26 @@
 medicine_name,type,price,quantity,mfg_date,exp_date
-Aspirin,Pain Relief,10.99,50,01/01/2022,01/06/2023
-Ibuprofen,Pain Relief,12.99,100,15/03/2022,15/03/2024
-Paracetamol,Pain Relief,7.99,75,01/12/2021,30/04/2023
-Naproxen,Pain Relief,20.99,30,10/02/2022,10/07/2023
-Amoxicillin,Antibiotic,15.99,50,01/05/2022,01/05/2023
-Cephalexin,Antibiotic,19.99,25,20/07/2022,20/07/2024
-Metformin,Diabetes,8.99,40,03/04/2022,03/04/2023
-Lisinopril,High Blood Pressure,11.99,60,25/02/2022,25/02/2023
-Simvastatin,Cholesterol,14.99,30,12/01/2022,12/01/2024
-Amlodipine,High Blood Pressure,9.99,20,07/09/2022,07/09/2024
-Levothyroxine,Thyroid,6.99,100,15/06/2022,15/06/2023
-Omeprazole,Acid Reflux,10.99,50,08/03/2022,08/03/2024
-Losartan,High Blood Pressure,12.99,75,19/05/2022,19/05/2024
-Lorazepam,Anxiety,15.99,30,06/11/2022,06/11/2023
-Hydrochlorothiazide,High Blood Pressure,7.99,100,30/04/2022,30/04/2024
-Fluoxetine,Depression,11.99,40,22/02/2022,22/02/2023
-Tramadol,Pain Relief,19.99,25,01/08/2022,01/08/2023
-Guaifenesin,Cold and Cough,8.99,50,09/12/2021,09/12/2022
-Diphenhydramine,Allergy,10.99,30,14/05/2022,14/05/2024
-Fexofenadine,Allergy,16.99,20,03/07/2022,03/07/2024
-Ipratropium,Bronchitis,22.99,10,16/09/2022,16/09/2024
-Azithromycin,Antibiotic,18.99,25,27/01/2022,27/01/2023
-Clarithromycin,Antibiotic,21.99,20,08/04/2022,08/04/2023
-Gatifloxacin,Eye Infection,13.99,15,01/03/2022,01/03/2023
-Ketotifen,Allergy,9.99,40,18/06/2022,18/06/2023
-Mometasone,Nasal Allergies,15.99,50,11/08/2022,11/08/2024
-Nystatin,Fungal Infection,7.99,30,06/09/2022,06/09/2023
-Oxacillin,Antibiotic,12.99,20,09/11/2022,09/11/2023
-Penicillin,Antibiotic,8.99,50,14/03/2022,14/03/2023
-Rifampicin,Antibiotic,24.99,10,29/05/2022,29/05/2023
-Sulfamethoxazole,Antibiotic,9.99,75,07/02/2022,07/02/2024
-Tetracycline,Antibiotic,11.99,40,22/07/2022,22/07/2023
-Vancomycin,Antibiotic,25.99,25,02/09/2022,02/09/2023
-Allopurinol,Gout,16.99,20,01/04/2022,01/04/2023
-Colchicine,Gout,22.99,30,14/11/2022,14/11/2023
-Doxycycline,Antibiotic,17.99,50,03/06/2022,03/06/2024
-Erythromycin,Antibiotic,13.99,25,10/10/2022,10/10/2023
-Furosemide,Diuretic,10.99,40,23/02/2022,23/02/2024
-Hydralazine,High Blood Pressure,18.99,15,17/05/2022,17/05/2023
-Isosorbide,Angina,11.99,20,08/08/2022,08/08/2023
-Lamivudine,HIV/AIDS,25.99,10,30/12/2021,30/12/2022
-Methotrexate,Chemotherapy,19.99,15,21/03/2022,21/03/2023
-Nifedipine,High Blood Pressure,8.99,50,12/05/2022,12/05/2024
-Oxycodone,Pain Relief,24.99,20,05/11/2022,05/11/2023
-Pravastatin,Cholesterol,13.99,30,28/06/2022,28/06/2023
-Quinine,Malaria,22.99,10,19/09/2022,19/09/2023
-Ramipril,High Blood Pressure,15.99,25,07/01/2022,07/01/2024
-Sertraline,Depression,11.99,40,20/08/2022,20/08/2023
-Thiamine,Vitamin Deficiency,7.99,100,04/02/2022,04/02/2023
-Ursodeoxycholic acid,Liver Disease,17.99,30,12/05/2022,12/05/2023
-Vitamin B12,Vitamin Deficiency,9.99,50,17/07/2022,17/07/2024
-Zolpidem,Insomnia,21.99,15,14/04/2022,14/04/2023
-Aspirin,Pain Relief,5.99,100,08/11/2022,08/11/2023
-Benzonatate,Cough,14.99,30,22/06/2022,22/06/2024
-Citalopram,Depression,10.99,50,12/03/2022,12/03/2023
-Dextromethorphan,Cough,7.99,50,19/05/2022,19/05/2023
-Esomeprazole,GERD,23.99,20,01/09/2022,01/09/2023
-Famotidine,GERD,9.99,50,09/12/2022,09/12/2023
-Gabapentin,Neuropathic Pain,11.99,30,16/02/2022,16/02/2024
-Hydrochlorothiazide,Diuretic,6.99,75,27/07/2022,27/07/2023
-Ibuprofen,Pain Relief,8.99,100,06/04/2022,06/04/2023
-Lisinopril,High Blood Pressure,12.99,30,28/09/2022,28/09/2023
-Metformin,Diabetes,7.99,50,17/11/2022,17/11/2023
-Naproxen,Pain Relief,11.99,30,23/06/2022,23/06/2023
-Omeprazole,GERD,14.99,30,09/03/2022,09/03/2024
-Prednisone,Inflammatory Conditions,9.99,25,11/08/2022,11/08/2023
-Quetiapine,Psychosis,15.99,20,26/10/2022,26/10/2023
-Rosuvastatin,Cholesterol,16.99,20,07/02/2022,07/02/2023
-Sumatriptan,Migraine,18.99,10,14/05/2022,14/05/2023
-Tamsulosin,BPH,13.99,25,28/08/2022,28/08/2023
-Valacyclovir,Herpes,24.99,10,01/12/2022,01/12/2023
-Warfarin,Blood Thinner,12.99,20,30/09/2022,30/09/2023
-Xanax,Anxiety,19.99,15,04/03/2022,04/03/2024
-Yohimbine,Erectile Dysfunction,20.99,10,21/07/2022,21/07/2023
-Zolmitriptan,Migraine,22.99,10,16/09/2022,16/09/2023
-Acyclovir,Herpes,7.99,50,05/06/2022,05/06/2023
-Bupropion,Depression,11.99,30,13/08/2022,13/08/2023
-Cephalexin,Antibiotic,8.99,50,22/11/2022,22/11/2023
-Anxiety,17.99,20,09/03/2022,09/03/2023
-Estradiol,Menopause,19.99,30,14/05/2022,14/05/2023
-Fluoxetine,Depression,9.99,50,21/07/2022,21/07/2023
-Guaifenesin,Cold,6.99,50,26/10/2022,26/10/2023
-Hydroxyzine,Anxiety,13.99,20,07/02/2022,07/02/2023
-Insulin,Diabetes,39.99,5,14/05/2022,14/05/2023
-Jardiance,Diabetes,31.99,10,28/08/2022,28/08/2023
-Ketorolac,Pain Relief,18.99,15,01/12/2022,01/12/2023
-Lamotrigine,Epilepsy,14.99,30,30/09/2022,30/09/2023
-Methylprednisolone,Inflammatory Conditions,21.99,20,04/03/2022,04/03/2023
-Nortriptyline,Depression,11.99,30,21/07/2022,21/07/2023
-Oxycodone,Pain Relief,49.99,10,13/08/2022,13/08/2023
-Pravastatin,Cholesterol,12.99,30,22/11/2022,22/11/2023
-Quinapril,High Blood Pressure,15.99,20,16/09/2022,16/09/2023
-Ranitidine,GERD,9.99,50,05/06/2022,05/06/2023
-Sertraline,Depression,11.99,30,13/08/2022,13/08/2023
-Trazodone,Depression,13.99,30,22/11/2022,22/11/2023
-Ursodiol,Gallstones,24.99,10,16/09/2022,16/09/2023
-Venlafaxine,Depression,12.99,30,05/06/2022,05/06/2023
-Warfarin,Blood Thinner,12.99,20,13/08/2022,13/08/2023
-Xarelto,Blood Thinner,79.99,5,22/11/2022,22/11/2023
-Yasmin,Birth Control,28.99,30,16/09/2022,16/09/2023
-Zinc,Cold,7.99,50,05/06/2022,05/06/2023
-Acetazolamide,Glaucoma,19.99,10,13/08/2022,13/08/2023
-Bismuth subsalicylate,Diarrhea,9.99,20,22/11/2022,22/11/2023
-Clonidine,High Blood Pressure,10.99,30,16/09/2022,16/09/2023
-Duloxetine,Depression,11.99,30,05/06/2022,05/06/2023
-Erythromycin,Antibiotic,14.99,20,13/08/2022,13/08/2023
-Folic Acid,Nutritional Supplement,7.99,50,22/11/2022,22/11/2023
-Gabapentin,Epilepsy,9.99,30,16/09/2022,16/09/2023
-Hydrochlorothiazide,High Blood Pressure,6.99,30,05/06/2022,05/06/2023
-Ibuprofen,Pain Relief,5.99,50,13/08/2022,13/08/2023
-Jasmine,Tea,8.99,100,22/11/2022,22/11/2023
-Ketoconazole,Antifungal,14.99,20,16/09/2022,16/09/2023
-Labetalol,High Blood Pressure,9.99,20,05/06/2022,05/06/2023
-Metoprolol,High Blood Pressure,9.99,30,13/08/2022,13/08/2023
-Naproxen,Pain Relief,7.99,30,22/11/2022,22/11/2023
-Omeprazole,GERD,12.99,20,16/09/2022,16/09/2023
-Pregabalin,Neuropathic Pain,18.99,15,05/06/2022,05/06/2023
-Quetiapine,Schizophrenia,19.99,20,13/08/2022,13/08/2023
-Ramipril,High Blood Pressure,10.99,20,22/11/2022,22/11/2023
-Sildenafil,Impotence,29.99,10,16/09/2022,16/09/2023
-Tetracycline,Antibiotic,16.99,10,05/06/2022,05/06/2023
-Umeclidinium,COPD,69.99,5,13/08/2022,13/08/2023
-Valacyclovir,Herpes,19.99,10,22/11/2022,22/11/2023
-Whey Protein,Nutritional Supplement,24.99,20,16/09/2022,16/09/2023
-Xylocaine,Local Anesthetic,19.99,10,05/06/2022,05/06/2023
-Yohimbine,Impotence,17.99,10,13/08/2022,13/08/2023
-Zolpidem,Insomnia,11.99,10,22/11/2022,22/11/2023
-Aspirin,Pain Relief,4.99,50,16/09/2022,16/09/2023
-Biotin,Nutritional Supplement,7.99,50,05/06/2022,05/06/2023
-Carvedilol,High Blood Pressure,9.99,20,13/08/2022,13/08/2023
-Doxycycline,Antibiotic,18.99,20,22/11/2022,22/11/2023
-Enalapril,High Blood Pressure,8.99,30,16/09/2022,16/09/2023
-
+Amoxicillin,Capsule,20,300,01/03/2021,01/03/2024
+Paracetamol,Syrup,15,500,05/02/2021,05/02/2023
+Cetirizine,Drops,10,400,08/04/2021,08/04/2023
+Ibuprofen,Tablet,25,250,15/06/2021,15/06/2024
+Lisinopril,Capsule,35,300,10/08/2021,10/08/2024
+Doxycycline,Capsule,50,400,20/09/2021,20/09/2024
+Levofloxacin,Tablet,30,500,01/10/2021,01/10/2024
+Metformin,Tablet,20,450,15/10/2021,15/10/2023
+Loratadine,Tablet,15,300,01/11/2021,01/11/2023
+Fluoxetine,Capsule,40,250,10/11/2021,10/11/2023
+Tramadol,Tablet,45,350,01/12/2021,01/12/2024
+Cefixime,Syrup,25,500,15/12/2021,15/12/2023
+Pantoprazole,Tablet,30,350,01/01/2022,01/01/2024
+Gabapentin,Capsule,20,300,05/02/2022,05/02/2024
+Clonidine,Tablet,15,250,20/03/2022,20/03/2024
+Ciprofloxacin,Drops,10,400,01/04/2022,01/04/2024
+Omeprazole,Capsule,35,500,10/05/2022,10/05/2024
+Furosemide,Tablet,25,300,01/06/2022,01/06/2023
+Losartan,Capsule,30,250,15/07/2022,15/07/2023
+Atorvastatin,Tablet,40,450,01/08/2022,01/08/2024
+Metronidazole,Tablet,20,400,10/09/2022,10/09/2024
+Diclofenac,Syrup,15,300,01/10/2022,01/10/2024
+Cephalexin,Capsule,50,350,15/11/2022,15/11/2023
+Bupropion,Tablet,45,250,01/12/2022,01/12/2023
+Aspirin,Tablet,4.5,100,01/12/2022,01/12/2023
