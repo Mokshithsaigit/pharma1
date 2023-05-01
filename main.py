@@ -579,8 +579,6 @@ def sell():
     btn2 = Button(top1, text='Calculate', width=8, padx=1, pady=0.5, fg='black', bg='#FF99CC', activebackground='green',command=calculate)
     btn2.place(x=560, y=420)
 
-    btn3 = Button(top1, text='Print', width=8, padx=4, pady=3, fg='black', bg='#FF99CC', activebackground='green')
-    btn3.place(x=410, y=550)
 
 
 def buy():
@@ -767,17 +765,17 @@ def buy():
     update_time()
 
 
-def summary(expiring_medicines=None):
+def summary():
     top3 = Toplevel(root)
     top3.title('View Stats')
-    top3.geometry('700x400')
-    top3.maxsize(700, 400)
-    top3.minsize(700, 400)
+    top3.geometry('700x500')
+    top3.maxsize(700, 500)
+    top3.minsize(700, 500)
     btn3 = Button(top3, text='Quit', fg='black', bg='#FF3333', activebackground='red', command=top3.destroy, width=10,
                   padx=4, pady=3)
-    btn3.place(x=330, y=370)
-    label = Label(top3, text="Stat's Section", font=('serif', 70, 'bold'))
-    label.place(x=50,y=20)
+    btn3.place(x=330, y=440)
+    label = Label(top3, text="Stat's Section", font=('serif', 50, 'bold'))
+    label.place(x=110,y=10)
 
     # Load data from CSV file
     data1 = pd.read_csv('buy.csv')
@@ -834,8 +832,10 @@ def summary(expiring_medicines=None):
 
 
     # Create entry widget to get the expiry date from the user
-    label_date = Label(top3, text='Enter expiry date (dd/mm/yyyy):',font=('Calibri',18))
+    label_date = Label(top3, text='Enter expiry date:',font=('Calibri',18))
     label_date.place(x=25,y=130)
+    label_date1 = Label(top3,text='(dd/mm/yyyy)',font=('Arial',12))
+    label_date1.place(x=40,y=190)
     entry_date = Entry(top3, width=20)
     entry_date.place(x=40,y=170)
 
@@ -969,9 +969,9 @@ def summary(expiring_medicines=None):
         # Show the plot
         plt.show()
     lbl = Label(top3,text='Inventory Graph:',font=('Calibri',17))
-    lbl.place(x=450,y=250)
+    lbl.place(x=470,y=250)
     btn1 = Button(top3,text="Show Graph",command=pie)
-    btn1.place(x=490,y=300)
+    btn1.place(x=470,y=300)
 
 # Create Buttons
 button1 = Button(root, text="Sell", width=12, bg='#E5FFCC', fg='black', command=sell)
